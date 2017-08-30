@@ -2,7 +2,7 @@
 //  ChattingAppTests.swift
 //  ChattingAppTests
 //
-//  Created by Coupang on 2017. 8. 30..
+//  Created by Geam on 2017. 8. 30..
 //  Copyright © 2017년 KI. All rights reserved.
 //
 
