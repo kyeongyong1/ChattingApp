@@ -9,6 +9,8 @@ target 'ChattingApp' do
   pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Core'
+  pod 'NMessenger'
   pod 'JSQMessagesViewController'
 
   target 'ChattingAppTests' do

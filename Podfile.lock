@@ -1,4 +1,11 @@
 PODS:
+  - AsyncDisplayKit (2.2):
+    - AsyncDisplayKit/PINRemoteImage (= 2.2)
+  - AsyncDisplayKit/Core (2.2)
+  - AsyncDisplayKit/PINRemoteImage (2.2):
+    - AsyncDisplayKit/Core
+    - PINRemoteImage/iOS (= 3.0.0-beta.8)
+    - PINRemoteImage/PINCache
   - Firebase/Auth (4.1.0):
     - Firebase/Core
     - FirebaseAuth (= 4.1.0)
@@ -53,14 +60,33 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - NMessenger (1.0.80):
+    - AsyncDisplayKit (= 2.2)
+  - PINCache (3.0.1-beta.4):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.4)
+    - PINCache/Core (= 3.0.1-beta.4)
+  - PINCache/Arc-exception-safe (3.0.1-beta.4):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.4):
+    - PINOperation (= 1.0.3)
+  - PINOperation (1.0.3)
+  - PINRemoteImage/Core (3.0.0-beta.8)
+  - PINRemoteImage/iOS (3.0.0-beta.8):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.8):
+    - PINCache (= 3.0.1-beta.4)
+    - PINRemoteImage/Core
 
 DEPENDENCIES:
   - Firebase/Auth
+  - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
   - JSQMessagesViewController
+  - NMessenger
 
 SPEC CHECKSUMS:
+  AsyncDisplayKit: 1585f6cd0531ae9b30476f5912f577b73ebcb0e4
   Firebase: ebebf41db7f10e0c7668b6eaaa857fbe599aa478
   FirebaseAnalytics: 76f754d37ca5b04f36856729b6af3ca0152d1069
   FirebaseAuth: 8d1d2389cf82f891048d6d50d27d044f55ae09a6
@@ -74,7 +100,11 @@ SPEC CHECKSUMS:
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  NMessenger: ca6a89073ca40d3868cf45505f6f8318853afd40
+  PINCache: a89c8f609232afac77128557bd12c861844423d7
+  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
+  PINRemoteImage: c4f9f16932840c597f32e69dd288e10e111a1929
 
-PODFILE CHECKSUM: 98f2bc46fd18c34eb34eabe3bcfc277a70bdabe1
+PODFILE CHECKSUM: 218f611f1e5126ff7beaa14afcbb6c92b5f12a3f
 
 COCOAPODS: 1.2.1
