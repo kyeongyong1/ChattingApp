@@ -23,7 +23,6 @@ class ChannelListViewController: UITableViewController {
     private var channels: [Channel] = []
     
     //MARK: - Life Cycle Methods
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Channel List"

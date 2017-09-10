@@ -8,6 +8,7 @@
 
 import Firebase
 import JSQMessagesViewController
+import Photos
 
 final class ChatViewController: JSQMessagesViewController {
     
@@ -18,6 +19,8 @@ final class ChatViewController: JSQMessagesViewController {
             title = channel?.name
         }
     }
+    lazy var storageRef: StorageReference = Storage.storage().reference(forURL: "gs://chattingapp-edb0c.appspot.com")
+    private let imageURLNotSetKey = "NOTSET"
     
     lazy var outgoingBubbleImageView: JSQMessagesBubbleImage = self.setupOutgoingBubble()
     lazy var incomingBubbleImageView: JSQMessagesBubbleImage = self.setupIncomingBubble()
@@ -111,9 +114,7 @@ final class ChatViewController: JSQMessagesViewController {
             ]
         
         itemRef.setValue(messageItem)
-        
         JSQSystemSoundPlayer.jsq_playMessageSentSound()
-        
         finishSendingMessage()
     }
 }
